@@ -183,7 +183,9 @@ img {
     color: var(--main-white);
     background-color: #c4c4c4;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/team-bckgrnd.jpg);
-    background-size: cover;
+    background-size: 1600px;
+    background-repeat: no-repeat;
+    background-position: center;
     align-items: center;
     text-align: center;
     padding-top: 200px;
@@ -243,6 +245,49 @@ img {
     text-transform: uppercase;
 
     margin-bottom: 10px;
+}
+
+/* .advantage-list-item::before {
+    display: inline-block;
+    content: "";
+    width: 270px;   
+    height: 120px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.advantage-list-item:first-child::before {
+    background-image: url(../images/antenna.svg);
+}
+
+.advantage-list-item:nth-child(2)::before {
+    background-image: url(../images/clock.svg);
+}
+
+.advantage-list-item:nth-child(3)::before {
+    background-image: url(../images/diagram.svg);
+}
+
+.advantage-list-item:last-child::before {
+    background-image: url(../images/astronaut.svg);
+} */
+
+.advantage-picture {
+    height: 120px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.advantage-picture-icon {
+    width: 70px;    
+    height: 70px;
 }
 
 .advantage-list-item {
@@ -503,6 +548,7 @@ address {
 .filter-button:hover, .filter-button:focus {
     color: var(--main-white);
     background-color: var(--main-blue);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Our clients */
@@ -516,6 +562,9 @@ address {
 
 .client-list-item {
     flex-basis: calc((100% - 60px) / 3);
+}
+.client-list-item:hover, .client-list-item:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 /* .client-list-item:not(:nth-child(3n)) {
     margin-right: 30px;
